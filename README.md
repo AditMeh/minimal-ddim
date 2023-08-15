@@ -1,5 +1,5 @@
 # minimal-ddim
-Implementing a minimal version of DDIM
+Implementing a minimal version of DDIM on MNIST.
 
 ## How to use
 
