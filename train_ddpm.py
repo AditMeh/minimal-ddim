@@ -35,7 +35,7 @@ def compute_schedule(T, beta_min, beta_max, device):
 def sample(T, schedule, img_shape, unet, device):
     with torch.no_grad():
         seed = torch.randn(*img_shape).to(device=device)
-        for i in tqdm.tqdm(range(T, 0, -1)):
+        for i in range(T, 0, -1):
             z = torch.randn(*img_shape).to(device=device) if i > 1 else 0
             ts = torch.ones(1).to(device) * i
 
@@ -99,7 +99,7 @@ def main():
             acc_loss += loss.item()
             denom += x.shape[0]
 
-        pbar.set_description(str(acc_loss / denom))
+        print("loss: ", str(acc_loss / denom))
 
 
         torch.save(unet.state_dict(), f"checkpoints/mnist_{epoch}.pt")
