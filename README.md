@@ -13,7 +13,7 @@ This puts visualizations in visuals/ and checkpoints in checkpoints
 
 ### Results
 
-The good thing about DDIM is you can verify whether it works by checking whether applying forward and then backwards diffusion results in the original image. 
+The cool thing about DDIM is you can verify whether it works by checking whether applying forward and then backwards diffusion results in the original image. 
 
 Here's my test:
 
