@@ -4,12 +4,12 @@ Implementing a minimal version of DDIM on MNIST.
 ## How to use
 
 ### Training DDPM
-This puts visualizations in visuals/ and checkpoints in checkpoints
+The following script puts visualizations in `visuals/` and checkpoints in `checkpoints/`
+
 `python train_ddpm.py`
 
 ### Sampling with DDIM
 `python ddim.py --checkpoint <path to checkpoint>`
-
 
 ### Results
 
