@@ -1,6 +1,12 @@
 # minimal-ddim
 Implementing a minimal version of DDIM on MNIST.
 
+## Requirements
+
+`diffusers`
+`pytorch`
+`torchvision`
+
 ## How to use
 
 ### Training DDPM
